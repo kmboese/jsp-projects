@@ -47,3 +47,12 @@ If certain Java source files are underlined in red, and functions in them like _
 Assuming you have JDK 13 installed on your computer (my version is jdk-13.0.2), in Eclipse, go to Window > Preferences > Java > Installed JREs. In the Installed JREs window, click "Add", select "Standard VM", and click "Next". A popup window will open where you can specify the location of the new JRE. Under "JRE home", click the Directory button and navigate to the Java 13 JDK root folder. On my system, this is located at "C:\Program Files\Java\jdk-13.0.2". Click "Choose Folder", and the popup window should now have the JDK information populated. Click "Finish" to add the JDK to the Eclipse JREs list. Ensure that JDK 13 is checked in the list of JDKs, so all future files added will reference this JDK as well. 
 
 After you switch to the new JDK, you will see a popup stating that all of the Java source files in the workspace need to be rebuilt. After allowing this process to run, the Java source files should no longer have a red underline, and you should be able to run all of the existing JSP files without issue.
+
+### Java Compiler Level Warning
+Depending on the Java level specified in the JSP projects, you may see the following warning under the Markers tab in Eclipse:
+```
+Java compiler level does not match the version of the installed Java project facet.
+```
+This essentially means that the Java compiler in Eclipse does not match the Java compiler selected for the Java project. In our case, the Eclipse Java compiler version is 13, so our Eclipse projects should match that version.
+
+To fix this, right click on the project specified in the warning and go to Properies, then search "facets". Under the Project Facets section, find the entry for "Java", and look at the version number. If the version number isn't "13", click the dropdown next to the entry and select 13. Then click "Apply and Close" to update the project Java compiler version.
