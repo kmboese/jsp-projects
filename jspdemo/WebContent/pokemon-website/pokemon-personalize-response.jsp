@@ -28,7 +28,7 @@
 	response.addCookie(cookie);
 %>
 
-<a href="cookies-homepage.jsp">Great, take me back to the homepage!</a>
+<a href="pokemon-homepage.jsp">Great, take me back to the homepage!</a>
 
 </body>
 

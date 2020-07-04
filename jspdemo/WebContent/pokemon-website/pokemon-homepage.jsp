@@ -25,7 +25,7 @@
 
 <br><br>
 <hr>
-<a href="cookies-personalize-form.html">Personalize this page</a>
+<a href="pokemon-personalize-form.html">Personalize this page</a>
 
 </body>
 
