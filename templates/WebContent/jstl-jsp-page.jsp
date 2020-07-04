@@ -17,7 +17,7 @@
 <body>
 
 	<ul>
-		<c:forEach var="x" items="${pageData}">
+		<c:forEach val="x" items="${pageData}">
 			<li>x</li>
 		</c:forEach>
 
