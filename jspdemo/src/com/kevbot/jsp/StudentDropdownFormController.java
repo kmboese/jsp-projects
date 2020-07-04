@@ -1,8 +1,5 @@
 package com.kevbot.jsp;
-import javax.servlet.*;
 import javax.servlet.http.*;
-import java.io.*;
-import java.util.*;
 
 public class StudentDropdownFormController {
 	static String backPage = "\"student-dropdown-form.html\"";
