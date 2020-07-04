@@ -12,7 +12,7 @@
 <body>
 	<h3>Cities</h3>
 	<c:forEach var="city" items="${myCities}">
-		${city} </br>
+		${city}
 	</c:forEach>
 
 </body>
